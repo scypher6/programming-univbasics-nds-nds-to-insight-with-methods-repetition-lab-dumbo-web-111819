@@ -25,7 +25,8 @@ def gross_for_director(d)
 end
 
 def list_of_directors(source)
-    source.map {|hash| hash.values}.flatten
+   # source.map {|hash| hash.values}.flatten
+     source.map {|hash| p hash[hash.keys[0]]}
 end
 
 def total_gross(source)
