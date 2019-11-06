@@ -25,7 +25,7 @@ def gross_for_director(d)
 end
 
 def list_of_directors(source)
-  # Write this implementation
+    source.map {|hash| hash.values}.flatten
 end
 
 def total_gross(source)
